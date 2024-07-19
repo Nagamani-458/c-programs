@@ -17,3 +17,16 @@ int main()
             {
                 if(i!=j)
                 {
+ int temp=arr[i];
+                    arr[i]=arr[j];
+                    arr[j]=temp;
+                }
+                j++;
+            }
+        }
+        printf("the resultant array:");
+        for(i=0;i<n;i++)
+        {
+            printf("%d\t",arr[i]);
+        }
+}
